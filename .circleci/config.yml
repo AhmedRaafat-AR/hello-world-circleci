@@ -7,11 +7,11 @@ commands:
     steps:
       - run: echo ${CIRCLE_WORKFLOW_ID}
       
-# Use a package of configuration called an orb.
-orbs:
-  # Declare a dependency on the welcome-orb
-  welcome: circleci/welcome-orb@0.4.1
-# Orchestrate or schedule a set of jobs
+# # Use a package of configuration called an orb.
+# orbs:
+#   # Declare a dependency on the welcome-orb
+#   welcome: circleci/welcome-orb@0.4.1
+# # Orchestrate or schedule a set of jobs
 jobs:
   my_job:
     docker:
@@ -40,8 +40,8 @@ jobs:
 
 workflows:
   # Name the workflow "welcome"
-  welcome:
-    # Run the welcome/run job in its own container
+#   welcome:
+#     # Run the welcome/run job in its own container
   my_workflow:
     jobs:
       - my_job
